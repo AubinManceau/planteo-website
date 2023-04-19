@@ -1,0 +1,466 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto&display=swap');
+
+
+/*Header*/
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+}
+
+nav{
+    align-self: center;
+}
+
+nav ul{
+    display: flex;
+    gap: 50px;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul a{
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+}
+
+.logo img{
+    width: 200px;
+}
+
+.icon{
+    display: flex;
+    gap: 50px;
+    align-self: center;
+}
+
+/*Header*/
+
+/*fiche contact*/
+.fiche-contact{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.contact-gauche{
+  display: flex;
+  flex-direction: column;
+  margin-left: 35px;
+  gap: 45px;
+  align-self: center;
+}
+
+.contact-droite{
+  background-color: #8EB361;
+  width: 70%;
+  height: auto;
+  border-radius: 15px 0 0 15px;
+}
+
+.coordonnees{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.coordonnees h2{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+}
+
+.coordonnees ul{
+  margin: 0;
+  line-height: 2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  padding-left: 25px;
+}
+
+.coordonnees li::marker{
+  color: #8EB361;
+}
+
+.contact{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.contact h2{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+}
+
+.contact ul{
+  margin: 0;
+  line-height: 2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  padding-left: 25px;
+}
+
+.contact li::marker{
+  color: #8EB361;
+}
+
+.newsletter{
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-direction: column;
+}
+
+.newsletter h2{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+}
+
+.newsletter form{
+  display: flex;
+}
+
+.newsletter input.formulaire{
+  border: 1px solid #DC9EE4;
+  border-radius: 8px 0 0 8px;
+  padding: 8px 17px;
+  background: none; 
+  color: rgb(0, 0, 0);
+  outline: none;
+}
+
+.newsletter input.formulaire::placeholder{
+  font-size: 14px;
+  color: rgba(0, 0, 0,.6);
+  font-family: 'Roboto', sans-serif;
+}
+
+.titre-formulaire h2{
+  margin: 20px 0;
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.formulaire-contact form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulaire-contact input#Name{
+  width: 300px;
+  height: 40px;
+}
+
+.formulaire-contact input#Email{
+  width: 632px;
+  height: 40px;
+}
+
+.formulaire-contact input{
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.formulaire-contact textarea{
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding: 5px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+}
+
+.formulaire-contact textarea{
+  width: 632px;
+  height: 140px;
+  resize: none;
+}
+
+.formulaire-contact label{
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  color: white;
+  margin-top: 25px;
+  margin-bottom: 10px;
+}
+
+.formulaire-contact .name-input{
+  display: flex;
+  gap: 20px;
+}
+
+.bouton button{
+  background: #DC9EE4;
+  border-radius: 8px;
+  padding: 13px 37px;
+  border: none;
+  color: white;
+  font-size: 22px;
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  margin: 25px 0;
+  cursor: pointer;
+}
+
+.bouton{
+  text-align: center;
+}
+
+
+/*fiche contact*/
+
+
+/*Aide*/
+.element-aide{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.element-aide h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+}
+
+.all-aide{
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.accordeon-item{
+  overflow: hidden;
+}
+
+.accordeon-header{
+  display: flex;
+  justify-content: space-between;
+  width: 70vw;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  padding: 0 15px;
+  cursor: pointer;
+  transition: .3s all ease-out;
+}
+
+.accordeon-content{
+  transition: .2s all ease-out;
+  width: 71vw;
+  padding: 5px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.hidden{
+  display: none;
+}
+
+.accordeon-item p{
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+}
+/*Aide*/
+
+
+/*Alertes*/
+div.alert1{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: red;
+  position: absolute;
+  top: 335px;
+  left: 670px;
+}
+
+div.alert2{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: red;
+  position: absolute;
+  top: 335px;
+  left: 1000px;
+}
+
+div.alert3{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: red;
+  position: absolute;
+  top: 448px;
+  left: 670px;
+}
+
+div.alert4{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: red;
+  position: absolute;
+  top: 657px;
+  left: 670px;
+}
+
+div.alert5{
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 738px;
+  left: 860px;
+}
+/*Alertes*/
+
+
+
+
+
+
+
+/*Footer*/
+footer{
+    background-color: #534840;
+    margin-top: 50px;
+    padding: 25px 0;
+  }
+
+  footer p{
+    text-align: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    margin: 15px 0 0 0 ;
+  }
+
+  .elements-footer{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .logo-footer img{
+    width: 300px;
+  }
+
+  .rs-footer{
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .rs-footer img{
+    width: 60px;
+  }
+
+  .liens-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .liens-footer h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .liens-footer ul{
+    color: #8EB361;
+    margin: 0;
+    padding-left: 15px;
+    line-height: 2.5;
+  }
+
+  .liens-footer a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .contact-footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+  }
+
+  .contact-footer h2{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    margin: 0;
+  }
+
+  .contact-footer ul{
+    color: #8EB361;
+    margin: 0;
+    padding-left: 15px;
+    line-height: 2.5;
+  }
+
+  .contact-footer a{
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .contact-footer form{
+    display: flex;
+  }
+
+  .bouton-form{
+    background: #DC9EE4;
+    border-radius: 0 8px 8px 0;
+    padding: 8px 17px;
+    border: none;
+    color: white;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+    cursor: pointer;
+  }
+
+  .input-form{
+    border: 1px solid #DC9EE4;
+    border-radius: 8px 0 0 8px;
+    padding: 8px 17px;
+    background: none; 
+    color: white;
+    outline: none;
+  }
+  .input-form::placeholder{
+    font-size: 14px;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  /*Footer*/
